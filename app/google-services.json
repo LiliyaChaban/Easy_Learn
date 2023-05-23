@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "564440195191",
+    "project_id": "easy-learn-b08f9",
+    "storage_bucket": "easy-learn-b08f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564440195191:android:8dfd7dc285aa442cc7a672",
+        "android_client_info": {
+          "package_name": "org.hse.learninglanguages"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564440195191-5js2voc9pbmokflg3pv24t5d9puem01i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBy7jPJ_aAhH1v7JD4i3r7NtRtrTeWMEBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564440195191-5js2voc9pbmokflg3pv24t5d9puem01i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

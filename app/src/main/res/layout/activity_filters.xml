@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cornerRadius="@dimen/_8sdp"
+    android:background="@android:color/white">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/filters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filters"
+        android:textSize="@dimen/_23sdp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_16sdp"
+        />
+
+    <LinearLayout
+        android:id="@+id/languageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/background_input"
+        android:layout_marginHorizontal="@dimen/_20sdp">
+        <Spinner
+            android:id="@+id/language"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_13ssp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/country"
+        android:hint="@string/country"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/primary_text"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:drawableEnd="@drawable/ic_arrow"
+        android:background="@drawable/background_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/_20sdp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/education"
+        android:text="@string/education_level"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        android:paddingStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/_20sdp"/>
+    <ListView
+        android:id="@+id/educationList"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:scrollbars="none"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/workExperience"
+        android:text="@string/work_experience"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        android:paddingStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/_20sdp"/>
+    <ListView
+        android:id="@+id/workExperienceList"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_260sdp"
+        android:scrollbars="none"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonApply"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:text="@string/apply"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/primary"
+        app:cornerRadius="@dimen/_8sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonClear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:backgroundTint="#c6c6c6"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:text="@string/reset_all_filters"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold"
+        app:cornerRadius="@dimen/_8sdp"/>
+</LinearLayout>
+
+</ScrollView>
